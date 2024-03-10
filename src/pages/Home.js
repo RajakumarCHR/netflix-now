@@ -1,7 +1,11 @@
 import React from "react";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div className="bf">
+      <h1>The biggest Indian hits. Ready to watch here from ₹ 149.</h1>
+    </div>
+  );
 };
 
 export default Home;

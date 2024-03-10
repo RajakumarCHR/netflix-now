@@ -62,6 +62,6 @@ npm start
   - MoviesSuggestion
     - MoviesList \* N
 
-- NetflixGPT
+- NetflixNow
   - Search
   - MoviesSuggestion

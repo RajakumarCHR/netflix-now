@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LOGO_RED from "../assets/Netflixnow-logo-png.png";
+import { PAGE } from "../router/routes";
 
 const Navbar = () => {
   return (
@@ -11,15 +12,15 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex gap-4 ml-4 text-gray-300 text-sm">
-        <Link to={"/"} className="hover:text-gray-50">
+        <Link to={PAGE.HOME} className="hover:text-gray-50">
           Home
         </Link>
-        <Link to={"/browse"} className="hover:text-gray-50">
+        <Link to={PAGE.BROWSE} className="hover:text-gray-50">
           Browse
         </Link>
       </div>
       <div className="ml-auto">
-        <Link to={"/login"}>Login</Link>
+        <Link to={PAGE.SIGNIN}>Sign In</Link>
       </div>
     </div>
   );
