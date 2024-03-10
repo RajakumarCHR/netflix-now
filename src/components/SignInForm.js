@@ -28,7 +28,9 @@ const SignInform = () => {
             ref={emailPhone}
             placeholder="Email or Phone Number"
             className={`px-4 py-4 w-full bg-[#333] border-b-2 rounded-[4px] focus:bg-[#4d4c4c] focus-visible:outline-none text-sm ${
-              errorMessage?.email ? "border-[#e87c03]" : "border-transparent"
+              errorMessage?.emailPhone
+                ? "border-[#e87c03]"
+                : "border-transparent"
             }`}
           />
           <div className="error px-1 py-2 text-[#e87c03] text-xs">
