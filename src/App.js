@@ -1,13 +1,12 @@
-import { RouterProvider } from "react-router-dom";
-import appRouter from "./routes/appRouter";
 import Layout from "./layout/Layout";
+import { Outlet } from "react-router-dom";
 import "./App.css";
 
 function App() {
   return (
     <>
       <Layout>
-        <RouterProvider router={appRouter} />
+        <Outlet />
       </Layout>
     </>
   );
